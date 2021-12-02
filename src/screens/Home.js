@@ -1,44 +1,43 @@
 import React from 'react';
-import { Toolbar, AppBar, Paper, Grid, Typography } from '@mui/material';
+import { Typography, Box } from '@mui/material';
 import { NavLink } from 'react-router-dom';
-import Landing from '../assets/images/landing.jpg'
+import Services from './Services';
+import Navbar from '../components/Navbar';
+import Description from './Description'
+
+import Clean from '../assets/images/clean.svg'
+import Moving from '../assets/images/moving.svg'
 
 const Home = () => {
   return (
     <>
-      <AppBar position='static'>
-        <Toolbar sx={{ justifyContent: 'space-around' }} disableGutters>
-          <NavLink to='/'>
-            <Typography sx={{ color: '#fff' }} variant='h6'>
-              Home
+      <Box className='page'>
+        <Navbar />
+        <Box className='landing-hero'>
+          <Box className='title-hero'>
+            <Typography
+              component='h1'
+              variant='h3'
+              color='inherit'
+              gutterBottom
+            >
+              D&D Cleaning Services
             </Typography>
-          </NavLink>
-          <NavLink to='/about-us'>
-            <Typography sx={{ color: '#fff' }} variant='h6'>
-              About Us
+            <Typography style={{color: '#175d8899'}} variant='h5'>
+              We know exactly what to use on each surface, for the best possible cleaning results!
             </Typography>
-          </NavLink>
-        </Toolbar>
-      </AppBar>
-      <Paper className='landing-hero' sx={{minHeight: '80vh'}}>
-        <Grid container>
-          <Grid item md={6} sx={{display: 'flex', flexDirection: 'column'}}>
-              <Typography
-                component='h1'
-                variant='h3'
-                color='inherit'
-                gutterBottom
-              >
-                Title of a longer featured blog post
-              </Typography>
-              <Typography variant='h5' color='inherit' paragraph>
-                Multiple lines of text that form the lede, informing new readers
-                quickly and efficiently about what&apos;s most interesting in
-                this post&apos;s contents…
-              </Typography>
-          </Grid>
-        </Grid>
-      </Paper>
+            <NavLink className='quote-btn' to='contact'>{''}<span>Get a free quote</span></NavLink>
+          </Box>
+          <Box className='box-1'>
+            <img src={Clean} alt="" />
+          </Box>
+          <Box className='box-2'>
+            <img src={Moving} alt="" />
+          </Box>
+        </Box>
+      </Box>
+      <Services />
+      <Description />
     </>
   );
 };

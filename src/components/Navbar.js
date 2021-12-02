@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Typography, Link, Container } from '@mui/material';
-import {NavLink} from 'react-router-dom'
 import Logo from '../assets/images/ddcleaninglogo.png';
 import MailIcon from '@mui/icons-material/MailOutlineOutlined';
 import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';
@@ -14,16 +13,13 @@ const Navbar = () => {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        padding: '20px 0px',
       }}
     >
-      <Box>
-        <img className='logo' src={Logo} alt='Company logo' />
-      </Box>
+      <img className='logo' src={Logo} alt='Company logo' />
       <Box sx={{ display: 'flex', alignItems: 'center' }}>
-        <MailIcon />
+        <MailIcon style={{ color: '#fff' }} />
         <Link
-          sx={{ marginLeft: '4px' }}
+          sx={{ marginLeft: '4px', textDecoration: 'none', color: 'black' }}
           variant='body1'
           href='mailto:info@dddeepcleaningservices.co.uk'
         >
@@ -31,7 +27,7 @@ const Navbar = () => {
         </Link>
       </Box>
       <Box sx={{ display: 'flex', alignItems: 'center' }}>
-        <QueryBuilderIcon />
+        <QueryBuilderIcon style={{ color: '#fff' }} />
         <Typography sx={{ marginLeft: '4px' }} variant='body1'>
           Mon-Sat: 08:00 - 20:00
         </Typography>
@@ -39,10 +35,9 @@ const Navbar = () => {
       <Box sx={{ display: 'block' }}>
         <Typography variant='body1'>Request free quote:</Typography>
         <Typography variant='body1'>
-          <strong>07900991973</strong>
+          <strong style={{ color: '#fff' }}>07900991973</strong>
         </Typography>
       </Box>
-      <NavLink to='contact'>Get a free quote</NavLink>
     </Container>
   );
 };

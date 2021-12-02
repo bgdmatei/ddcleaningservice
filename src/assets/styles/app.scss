@@ -6,20 +6,193 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
+.MuiTypography-root {
+  font-family: MonsLight !important;
+}
+
+@font-face {
+  font-family: PopLight;
+  src: url("../fonts/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: MonsLight;
+  src: url("../fonts/Montserrat-Light.ttf");
+}
+
+html {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 300;
 }
 
 a {
   text-decoration: none;
 }
 
-.landing-hero {
-  text-align: center;
-  background-image: url('../images/landing.jpg');
-  color: white;
+.page {
+  background: #2980B9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+  height: 100vh;
+}
+
+.page-2 {
+  background: #2980B9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  h3 {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 700;
+    font-size: 56px;
+  }
+}
+
+.page-3 {
+  background: #2980B9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  h3 {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 700;
+    font-size: 56px;
+  }
+}
+
+.landing-hero {
+  min-height: 80vh;
+  padding-top: 8%;
+  text-align: center;
+  color: white;
+  display: grid;
+  grid-template-columns: 5% 1fr 1fr 1fr 1fr 1fr 5%;
+}
+
+.title-hero {
+  text-align: center;
+  align-self: auto;
+  justify-self: center;
+  grid-column: 3/4;
+  color: #fff;
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 82px;
+    }
+}
+
+.box-1 {
+  text-align: center;
+  align-items: center;
+  grid-column: 4/4;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.box-2 {
+  text-align: center;
+  align-items: flex-end;
+  grid-column: 5/6;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.service {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+} 
+
+.bubble {
+  color: #175d88;
+  width: 170px;
+  height: 170px;
+  background-image: url('../images/bubble.png');
+  position: absolute;
+  z-index: 2;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  pointer-events: none;
+  transition: all 0.5s ease-out 0.1s;
+  top: -35%;
+  right: 50%;
+}
+
+.divider-services {
+  color: #2981b9;
+  font-size: 6vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    height: 0.09em;
+    min-width: 30vw;
+  }
+  
+  &::before {
+    background: linear-gradient(to right, rgba(240,240,240,0), #2981b9);
+    margin-right: 4vh;
+  }
+  
+  &::after {
+    background: linear-gradient(to left, rgba(240,240,240,0), #2981b9);
+    margin-left: 4vh;
+  } 
+}
+
+.divider-description {
+  color: #fff;
+  font-size: 6vh;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .45);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    height: 0.09em;
+    min-width: 30vw;
+  }
+  
+  &::before {
+    background: linear-gradient(to right, rgba(240,240,240,0), #fff);
+    margin-right: 4vh;
+  }
+  
+  &::after {
+    background: linear-gradient(to left, rgba(240,240,240,0), #fff);
+    margin-left: 4vh;
+  } 
 }
