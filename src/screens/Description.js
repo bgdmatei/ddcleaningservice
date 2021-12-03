@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Typography, Grid, List, ListItem, ListItemText } from '@mui/material'
+import { Box, Typography, Grid } from '@mui/material'
 import goals from '../assets/images/goals.svg'
 
 const Description = () => {
@@ -20,22 +20,12 @@ const Description = () => {
           <Typography style={{ color: 'rgb(63, 61, 86)' }} variant='body1'>
             <strong>D&D</strong> is a cleaning company that offers full services for any types of properties.
           </Typography>
-          <List style={{marginTop: '2em', color: 'rgb(63, 61, 86)' }}>
-            <ListItem>
-              <ListItemText
-                primary="Trustworthy cleaning services at affordable prices."
-              />
-              <ListItemText
-                primary="We treat our customers with professionalism"
-              />
-              <ListItemText
-                primary="We guarantee outstanding results"
-              />
-              <ListItemText
-                primary="We offer our customers flexibility"
-              />
-            </ListItem>
-          </List>
+          <Grid style={{color: '#40435c'}} container spacing={3} mt={5}>
+            <Grid item xs={12} md={6} xl={6}>○ Trustworthy cleaning services at affordable prices</Grid>
+            <Grid item xs={12} md={6} xl={6}>○ We treat our customers with professionalism</Grid>
+            <Grid item xs={12} md={6} xl={6}>○ We guarantee outstanding results</Grid>
+            <Grid item xs={12} md={6} xl={6}>○ We offer our customers flexibility</Grid>
+          </Grid>
         </Grid>
       </Grid>
     </Box>

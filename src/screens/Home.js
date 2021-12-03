@@ -1,9 +1,10 @@
 import React from 'react';
-import { Typography, Box } from '@mui/material';
-import { NavLink } from 'react-router-dom';
+import { Typography, Box, Link } from '@mui/material';
 import Services from './Services';
-import Navbar from '../components/Navbar';
 import Description from './Description'
+import Reviews from './Reviews'
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 import Clean from '../assets/images/clean.svg'
 import Moving from '../assets/images/moving.svg'
@@ -26,7 +27,7 @@ const Home = () => {
             <Typography style={{color: '#175d8899'}} variant='h5'>
               We know exactly what to use on each surface, for the best possible cleaning results!
             </Typography>
-            <NavLink className='quote-btn' to='contact'>{''}<span>Get a free quote</span></NavLink>
+            <Link href='mailto:info@dddeepcleaningservices.co.uk' className='quote'>{''}<span>Get a free quote</span></Link>
           </Box>
           <Box className='box-1'>
             <img src={Clean} alt="" />
@@ -38,6 +39,7 @@ const Home = () => {
       </Box>
       <Services />
       <Description />
+      <Reviews />
     </>
   );
 };

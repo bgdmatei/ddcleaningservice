@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-.MuiTypography-root {
-  font-family: MonsLight !important;
-}
-
 @font-face {
   font-family: PopLight;
   src: url("../fonts/Poppins-Light.ttf");
@@ -19,7 +15,7 @@
   src: url("../fonts/Montserrat-Light.ttf");
 }
 
-html {
+body {
   font-family: 'Montserrat', sans-serif !important;
   font-weight: 300;
 }
@@ -63,12 +59,37 @@ a {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  height: 100vh;
+  height: 80vh;
   h3 {
     font-family: "Montserrat", sans-serif !important;
     font-weight: 700;
     font-size: 56px;
   }
+}
+
+.page-4 {
+  background: #2980B9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  height: 80vh;
+  h3 {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 700;
+    font-size: 56px;
+  }
+}
+
+.review-page {
+  background-image: url('../images/review-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  height: 70%;
 }
 
 .landing-hero {
@@ -195,4 +216,35 @@ a {
     background: linear-gradient(to left, rgba(240,240,240,0), #fff);
     margin-left: 4vh;
   } 
+}
+
+.outside-carousel {
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  width: 45%;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  h4 {
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+  }
+}
+
+.apostrophe::after {
+content: '“';
+position: absolute;
+top: 100px;
+left: 85%;
+font-size: 160px;
+color: #fff;
 }

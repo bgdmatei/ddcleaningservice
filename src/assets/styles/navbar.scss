@@ -15,46 +15,45 @@ background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+
 
 }
 
-.quote-btn {
+.quote {
   border: none;
   display: inline flow-root list-item;
   text-align: center;
+  text-decoration: none !important;
   cursor: pointer;
   text-transform: uppercase;
   outline: none;
   overflow: hidden;
   position: relative;
-  color: #175d88;
-  font-weight: 600;
+  color: #175d88 !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 700 !important;
   font-size: 15px;
   padding: 1em;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  margin-top: 1em;
-}
-
-.quote-btn span {
-  position: relative; 
-  z-index: 1;
-}
-
-.quote-btn:hover {
-  color: #fff;
-  transition: all 0.5s ease-in-out ease-out;
-}
-
-.quote-btn:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 490%;
-  width: 180%;
-  background: #0caadc;
-  transition: all 0.3s ease-in-out;
-  transform: translateX(-98%) translateY(-25%) rotate(45deg);
-}
-
-.quote-btn:hover:after {
-  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
-  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  margin-top: 1em !important;
+  span {
+    position: relative; 
+    z-index: 1;
+  }
+  &:hover {
+    text-decoration: none !important;
+    color: #fff !important;
+    transition: all 0.5s ease-in-out ease-out;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 490%;
+    width: 180%;
+    background: #0caadc;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  }
+  &:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  }
 }

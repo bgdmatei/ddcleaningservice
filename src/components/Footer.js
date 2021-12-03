@@ -1,22 +1,23 @@
-import React from 'react';
-import { Box, Typography, Link, Container } from '@mui/material';
-import Logo from '../assets/images/ddcleaninglogo.png';
+import React from 'react'
+import { Box, Typography, Link } from '@mui/material';
 import '../assets/styles/navbar.scss'
 import MailIcon from '@mui/icons-material/MailOutlineOutlined';
 import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';
 
-const Navbar = () => {
+const Footer = () => {
   return (
-    <Container
-      sx={{
-        minHeight: '10vh',
-        margin: 'auto',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-      }}
-    >
-      <img className='logo' src={Logo} alt='Company logo' />
+    <Box sx={{
+      minHeight: '10vh',
+      margin: '0 auto',
+      display: 'flex',
+      justifyContent: 'space-around',
+      alignItems: 'center',
+    }}>
+      <Box sx={{ display: 'flex', alignItems: 'center' }}>
+        <Typography sx={{ marginLeft: '4px', color: '#fff' }} variant='body1'>
+          Locations: London
+        </Typography>
+      </Box>
       <Box sx={{ display: 'flex', alignItems: 'center' }}>
         <MailIcon style={{ color: '#FAE0DE' }} />
         <Link
@@ -34,13 +35,13 @@ const Navbar = () => {
         </Typography>
       </Box>
       <Box sx={{ display: 'block', marginTop: '1.5em' }}>
-        <Typography style={{color: '#fff'}} variant='body1'>Request free quote:</Typography>
+        <Typography style={{ color: '#fff' }} variant='body1'>Phone number: </Typography>
         <Typography variant='body1'>
           <strong style={{ color: '#FAE0DE' }}>07900991973</strong>
         </Typography>
       </Box>
-    </Container>
-  );
-};
+    </Box>
+  )
+}
 
-export default Navbar;
+export default Footer
