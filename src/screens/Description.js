@@ -12,13 +12,13 @@ const Description = () => {
         </Grid>
         <Grid item style={{ textAlign: 'center', padding: '3em' }} xs={12} md={6} xl={6}>
           <Typography style={{ color: 'rgb(63, 61, 86)', fontWeight: 'bold' }} mb={3} variant='h5'>
-            Professional Cleaning Services for Home and Office
+            Professional Deep Cleaning Services for Home and Office
           </Typography>
           <Typography style={{ color: 'rgb(63, 61, 86)' }} mb={3} variant='body1'>
-            <strong>D&D offers</strong> a wide range of <strong>professional cleaning services</strong> for both <strong>individuals</strong> – apartment and house cleaning, as well as for <strong>companies</strong>: office cleaning, warehouse or showroom cleaning, commercial cleaning services of the highest standards.
+            <strong>D&D offers</strong> a wide range of <strong>professional deep cleaning services</strong> for both <strong>individuals</strong> – apartment and house cleaning, as well as for <strong>companies</strong>: office cleaning, warehouse or showroom cleaning, commercial cleaning services of the highest standards.
           </Typography>
           <Typography style={{ color: 'rgb(63, 61, 86)' }} variant='body1'>
-            <strong>D&D</strong> is a cleaning company that offers full services for any types of properties.
+            <strong>D&D</strong> is a deep cleaning company that offers full services for any types of properties.
           </Typography>
           <Grid style={{color: '#40435c'}} container spacing={3} mt={5}>
             <Grid item xs={12} md={6} xl={6}>○ Trustworthy cleaning services at affordable prices</Grid>

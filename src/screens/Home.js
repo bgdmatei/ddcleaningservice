@@ -4,7 +4,6 @@ import Services from './Services';
 import Description from './Description'
 import Reviews from './Reviews'
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 
 import Clean from '../assets/images/clean.svg'
 import Moving from '../assets/images/moving.svg'
@@ -22,7 +21,7 @@ const Home = () => {
               color='inherit'
               gutterBottom
             >
-              D&D Cleaning Services
+              &nbsp;&nbsp;D&D &nbsp; Deep Cleaning Services
             </Typography>
             <Typography style={{color: '#175d8899'}} variant='h5'>
               We know exactly what to use on each surface, for the best possible cleaning results!
