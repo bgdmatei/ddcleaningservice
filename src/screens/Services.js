@@ -9,7 +9,7 @@ const Services = () => {
   return (
     <Box className='page-2' sx={{textAlign: 'center'}}>
       <Typography className='divider-services' variant='h3'>Services</Typography>
-      <Grid container sx={{ marginTop: '5%' }} justifyContent="center"
+      <Grid className='services-grid' container sx={{ marginTop: '5%' }} justifyContent="center"
         alignItems="center" >
         <Grid item xs={12} md={8} xl={8}>
           <Box className='service'>

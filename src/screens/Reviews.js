@@ -24,8 +24,8 @@ const Reviews = () => {
     return (
       <Box style={{ height: '100%' }}>
         <Box className="apostrophe"></Box>
-        <Typography style={{ color: '2f2e41' }} textAlign='center' variant='h4'>{props.item.name}</Typography>
-        <Typography color='White' variant='h6'>{props.item.description}</Typography>
+        <Typography classname='carousel-title' style={{ color: '2f2e41' }} textAlign='center' variant='h4'>{props.item.name}</Typography>
+        <Typography classname='carousel-descr' color='White' variant='h6'>{props.item.description}</Typography>
       </Box>
     )
   }

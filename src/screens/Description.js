@@ -7,7 +7,7 @@ const Description = () => {
     <Box className='page-3'>
       <Typography className='divider-description' sx={{ textAlign: 'center' }} variant='h3'>About Us</Typography>
       <Grid container style={{ marginTop: '3em' }} alignItems='center'>
-        <Grid style={{ justifyContent: 'flex-end' }} item xs={12} md={4} xl={4}>
+        <Grid className='description-image's style={{ justifyContent: 'flex-end' }} item xs={12} md={4} xl={4}>
           <img style={{ float: 'inline-end' }} src={goals} alt="" />
         </Grid>
         <Grid item style={{ textAlign: 'center', padding: '3em' }} xs={12} md={6} xl={6}>

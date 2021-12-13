@@ -28,10 +28,10 @@ const Home = () => {
             </Typography>
             <Link href='mailto:info@dddeepcleaningservices.co.uk' className='quote'>{''}<span>Get a free quote</span></Link>
           </Box>
-          <Box className='box-1'>
+          <Box className='image-grid-1'>
             <img src={Clean} alt="" />
           </Box>
-          <Box className='box-2'>
+          <Box className='image-grid-2'>
             <img src={Moving} alt="" />
           </Box>
         </Box>
