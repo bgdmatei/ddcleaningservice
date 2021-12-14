@@ -50,7 +50,7 @@ const Services = () => {
             </Typography>
           </Box> 
           <Box>
-            <Grid container sx={{color: '#fff'}}>
+            <Grid container spacing={3} sx={{color: '#fff'}}>
               <Grid item xs={12} md={4} xl={4}>
                 <Typography variant='h5'>
                   1. Request a free <span style={{color: '#175d88'}}> quote</span>

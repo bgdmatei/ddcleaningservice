@@ -21,7 +21,7 @@ const Navbar = () => {
     return isTablet ? children : null
   }
   const Mobile = ({ children }) => {
-    const isMobile = useMediaQuery({ maxWidth: 767 })
+    const isMobile = useMediaQuery({ minWidth: 374, maxWidth: 766})
     return isMobile ? children : null
   }
 
@@ -141,10 +141,20 @@ const Navbar = () => {
             minHeight: '10vh',
             margin: 'auto',
             maxWidth: '100vw',
-            textAlign: 'center'
+            textAlign: 'center',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-around'
+
           }}
         >
-          <img style={{ width: '40%' }} src={Logo} alt='Company logo' />
+          <img style={{ width: '30%' }} src={Logo} alt='Company logo' />
+          <Box sx={{ display: 'block', marginTop: '1.5em' }}>
+            <Typography style={{ color: '#fff', fontSize: '12px' }} variant='body1'>Request free quote:</Typography>
+            <Typography variant='body1'>
+              <strong style={{ color: '#FAE0DE', fontSize: '12px' }}>07900991973</strong>
+            </Typography>
+          </Box>
         </Container>
       </Mobile>
     </>

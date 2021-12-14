@@ -139,6 +139,48 @@ const Footer = () => {
           </Box>
         </Box>
       </Tablet>
+
+      <Mobile>
+        <Box sx={{
+          minHeight: '10vh',
+          margin: '0 auto',
+          display: 'flex',
+          justifyContent: 'space-around',
+          alignItems: 'center',
+        }}>
+          <Box sx={{ display: 'block' }}>
+            <Box sx={{ display: 'flex', alignItems: 'center', marginBottom: '1em' }}>
+              <Typography sx={{ marginLeft: '4px', color: '#fff', fontSize: '10px' }} >
+                Locations: London
+              </Typography>
+            </Box>
+            <Box sx={{ display: 'flex', alignItems: 'center' }}>
+              <MailIcon style={{ color: '#FAE0DE' }} />
+              <Link
+                sx={{ marginLeft: '4px', textDecoration: 'none', color: '#fff', fontSize: '10px' }}
+
+                href='mailto:info@dddeepcleaningservices.co.uk'
+              >
+                info@dddeepcleaningservices.co.uk
+              </Link>
+            </Box>
+          </Box>
+
+          <Box sx={{ display: 'block' }}>
+          <Box sx={{marginBottom: '1em'}}>
+              <Typography sx={{ marginLeft: '4px', color: '#fff', fontSize: '10px' }}>
+              Phone: <strong style={{ color: '#FAE0DE', fontSize: '10px' }}> 07900991973</strong>
+              </Typography>
+            </Box>
+            <Box sx={{ display: 'flex', alignItems: 'center' }}>
+              <QueryBuilderIcon style={{ color: '#FAE0DE' }} />
+              <Typography sx={{ marginLeft: '4px', color: '#fff', fontSize: '10px' }} >
+                Mon-Sat: 08:00 - 20:00
+              </Typography>
+            </Box>
+          </Box>
+        </Box>
+      </Mobile>
     </>
   )
 }
