@@ -21,7 +21,7 @@ const Navbar = () => {
     return isTablet ? children : null
   }
   const Mobile = ({ children }) => {
-    const isMobile = useMediaQuery({ minWidth: 374, maxWidth: 766})
+    const isMobile = useMediaQuery({ minWidth: 360, maxWidth: 766})
     return isMobile ? children : null
   }
 

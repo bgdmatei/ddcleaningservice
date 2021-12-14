@@ -386,12 +386,13 @@ a {
 }
 
 //Mobile
-@media (min-width: 374px) and (max-width: 767px) {
+@media (min-width: 360px) and (max-width: 767px) {
   .quote {
     font-size: 12px;
     &:after {
-      height: 490%;
-      width: 190%;
+      display: none;
+      height: 0%;
+      width: 0%;
     }
   }
   .service {
@@ -428,7 +429,7 @@ a {
     height: 170vh;
   }
   .page-3 {
-    height: 140vh;
+    height: 145vh;
   }
   .description-image {
     justify-content: center !important;
@@ -438,7 +439,7 @@ a {
     }
   }
   .page-4 {
-    height: 90vh;
+    height: 95vh;
   }
   .review-page {
     height: 60%;
