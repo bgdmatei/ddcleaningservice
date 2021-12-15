@@ -1,5 +1,5 @@
 .navbar {
-  background: #2193b0; 
+  background: #2193b0;
   background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
   background: linear-gradient(to right, #6dd5ed, #2193b0);
 }
@@ -9,15 +9,23 @@
 }
 
 .MuiAppBar-colorPrimary {
-  background: #2980B9;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: #2980b9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .quote {
   border: none;
-  display: inline flow-root list-item;
   text-align: center;
   text-decoration: none !important;
   cursor: pointer;
@@ -26,34 +34,20 @@ background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+
   overflow: hidden;
   position: relative;
   color: #175d88 !important;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
   font-weight: 700 !important;
   font-size: 15px;
   padding: 1em;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  margin-top: 1em !important;
+  transition: all .3s ease-in-out;
   span {
-    position: relative; 
+    position: relative;
     z-index: 1;
   }
   &:hover {
     text-decoration: none !important;
     color: #fff !important;
+    background-color: #0caadc;
     transition: all 0.5s ease-in-out ease-out;
-  }
-  &:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 490%;
-    width: 180%;
-    background: #0caadc;
-    transition: all 0.3s ease-in-out;
-    transform: translateX(-98%) translateY(-25%) rotate(45deg);
-  }
-  &:hover:after {
-    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
-    transform: translateX(-9%) translateY(-25%) rotate(45deg);
   }
 }
