@@ -26,6 +26,10 @@ const Home = () => {
     const isMobile = useMediaQuery({ minWidth: 360, maxWidth: 766 })
     return isMobile ? children : null
   }
+  const SmallScreen = ({ children }) => {
+    const isMobile = useMediaQuery({ minWidth: 315, maxWidth: 359 })
+    return isMobile ? children : null
+  }
   return (
     <>
       <Desktop>
@@ -133,6 +137,27 @@ const Home = () => {
         </Box>
       </Mobile>
 
+      <SmallScreen>
+      <Box className="page">
+          <Navbar />
+          <Box sx={{marginTop: '4em'}}>
+            <Box className='title-hero'>
+              <Typography
+                sx={{fontWeight: '700'}}
+                variant='h2'
+                color='inherit'
+                gutterBottom
+              >
+                &nbsp;&nbsp;D&D &nbsp; Deep Cleaning Services
+              </Typography>
+              <Typography style={{ margin: '3em', color: '#175d8899' }} variant='body1'>
+                We know exactly what to use on each surface for the best possible cleaning results!
+              </Typography>
+              <Link href='mailto:info@dddeepcleaningservices.co.uk' className='quote'>{''}<span>Get a free quote</span></Link>
+            </Box>
+          </Box>
+        </Box>
+      </SmallScreen>
       <Services />
       <Description />
       <Reviews />

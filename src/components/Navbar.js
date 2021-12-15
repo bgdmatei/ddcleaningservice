@@ -21,7 +21,11 @@ const Navbar = () => {
     return isTablet ? children : null
   }
   const Mobile = ({ children }) => {
-    const isMobile = useMediaQuery({ minWidth: 360, maxWidth: 766})
+    const isMobile = useMediaQuery({ minWidth: 360, maxWidth: 766 })
+    return isMobile ? children : null
+  }
+  const SmallScreen = ({ children }) => {
+    const isMobile = useMediaQuery({ minWidth: 315, maxWidth: 359 })
     return isMobile ? children : null
   }
 
@@ -73,7 +77,7 @@ const Navbar = () => {
             alignItems: 'center',
           }}
         >
-          <img style={{ width: '12%'}} src={Logo} alt='Company logo' />
+          <img style={{ width: '12%' }} src={Logo} alt='Company logo' />
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <MailIcon style={{ color: '#FAE0DE' }} />
             <Link
@@ -109,7 +113,7 @@ const Navbar = () => {
             alignItems: 'center',
           }}
         >
-          <img style={{width: '15%'}} src={Logo} alt='Company logo' />
+          <img style={{ width: '15%' }} src={Logo} alt='Company logo' />
           <Box sx={{ display: 'flex', alignItems: 'center', }}>
             <MailIcon style={{ color: '#FAE0DE' }} />
             <Link
@@ -157,6 +161,29 @@ const Navbar = () => {
           </Box>
         </Container>
       </Mobile>
+
+      <SmallScreen>
+        <Container
+          sx={{
+            minHeight: '10vh',
+            margin: 'auto',
+            maxWidth: '100vw',
+            textAlign: 'center',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-around'
+
+          }}
+        >
+          <img style={{ width: '30%' }} src={Logo} alt='Company logo' />
+          <Box sx={{ display: 'block', marginTop: '1.5em' }}>
+            <Typography style={{ color: '#fff', fontSize: '12px' }} variant='body1'>Request free quote:</Typography>
+            <Typography variant='body1'>
+              <strong style={{ color: '#FAE0DE', fontSize: '12px' }}>07900991973</strong>
+            </Typography>
+          </Box>
+        </Container>
+      </SmallScreen>
     </>
   );
 };
