@@ -115,7 +115,7 @@ a {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  height: 70vh;
+  height: 82vh;
   h3 {
     font-family: 'Montserrat', sans-serif !important;
     font-weight: 700;
@@ -275,10 +275,14 @@ a {
   align-items: center;
   justify-content: center;
   display: flex;
-  h4 {
+  em {
+    font-size: 24px;
     margin-bottom: 8px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+  }
+  p {
+    font-size: 18px;
   }
 }
 
@@ -458,13 +462,17 @@ a {
   }
   .carousel {
     width: 90%;
+    em {
+      font-size: 16px;
+      margin-bottom: 8px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+    }
+    p {
+      font-size: 12px;
+    }
   }
-  .css-gyrawg-MuiTypography-root {
-    font-size: 14px !important;
-  }
-  .css-ake13m-MuiTypography-root {
-    font-size: 18px !important;
-  }
+
   .apostrophe {
     display: block;
   }
