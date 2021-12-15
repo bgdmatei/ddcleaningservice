@@ -20,7 +20,11 @@ const Footer = () => {
     return isTablet ? children : null
   }
   const Mobile = ({ children }) => {
-    const isMobile = useMediaQuery({ maxWidth: 767 })
+    const isMobile = useMediaQuery({ minWidth: 360, maxWidth: 767 })
+    return isMobile ? children : null
+  }
+  const SmallScreen = ({ children }) => {
+    const isMobile = useMediaQuery({ minWidth: 315, maxWidth: 359 })
     return isMobile ? children : null
   }
 
@@ -167,9 +171,9 @@ const Footer = () => {
           </Box>
 
           <Box sx={{ display: 'block' }}>
-          <Box sx={{marginBottom: '1em'}}>
+            <Box sx={{ marginBottom: '1em' }}>
               <Typography sx={{ marginLeft: '4px', color: '#fff', fontSize: '10px' }}>
-              Phone: <strong style={{ color: '#FAE0DE', fontSize: '10px' }}> 07900991973</strong>
+                Phone: <strong style={{ color: '#FAE0DE', fontSize: '10px' }}> 07900991973</strong>
               </Typography>
             </Box>
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
@@ -181,6 +185,27 @@ const Footer = () => {
           </Box>
         </Box>
       </Mobile>
+
+      <SmallScreen>
+        <Box sx={{ textAlign: 'center', padding: '1em' }}>
+          <Typography sx={{ color: '#fff', fontSize: '10px', marginBottom: '4px' }} >
+            Locations: London
+          </Typography>
+          <Link
+            sx={{ textDecoration: 'none', color: '#fff', fontSize: '10px', marginBottom: '6px' }}
+            href='mailto:info@dddeepcleaningservices.co.uk'
+          >
+            info@dddeepcleaningservices.co.uk
+          </Link>
+            <Typography sx={{ color: '#fff', fontSize: '10px', marginBottom: '4px' }}>
+              Phone: <strong style={{ color: '#FAE0DE', fontSize: '10px' }}> 07900991973</strong>
+            </Typography>
+          <Typography sx={{ color: '#fff', fontSize: '10px', marginBottom: '4px' }} >
+            Mon-Sat: 08:00 - 20:00
+          </Typography>
+
+        </Box>
+      </SmallScreen>
     </>
   )
 }
